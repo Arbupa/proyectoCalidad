@@ -1,8 +1,15 @@
-def insert_team_data():
-    pass
+from abc import ABC, abstractmethod
 
-def insert_pokemon_data():
-    pass
+class InterfaceStorage(ABC):
 
-def get_team_data():
-    pass
+    @abstractmethod
+    def insert_team_data(self):
+        pass
+
+    @abstractmethod
+    def insert_pokemon_data(self):
+        pass
+
+    @abstractmethod
+    def get_team_data(self):
+        pass
